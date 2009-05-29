@@ -2,7 +2,7 @@ require 'digest/sha1'
 
 class Reader < ActiveRecord::Base
   is_site_scoped
-  is_gravtastic :with => :email, :rating => 'PG', :size => 48
+  is_gravtastic :email, :rating => 'PG', :size => 48
   cattr_accessor :current_reader
 
   belongs_to :user
